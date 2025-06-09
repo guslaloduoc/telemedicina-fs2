@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Mi Perfil - Clínica Virtual</title> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">
+          <img src="https://placehold.co/40x40/0d6efd/white?text=CV" alt="Logo Clínica Virtual" class="d-inline-block align-text-top rounded-circle me-2" style="height: 40px;">
+          Clínica Virtual
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center"></ul>
+        </div>
+      </div>
+    </nav>
+</header>
+
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card shadow-sm border-0 mb-4">
+          <div class="card-body text-center">
+            <img src="https://st3.depositphotos.com/6672868/13701/v/450/depositphotos_137014128-stock-illustration-user-profile-icon.jpg" alt="Foto de Perfil" class="rounded-circle mb-3" width="150">
+            <h3 class="card-title mb-1" id="display-nombre">Cargando...</h3>
+            <p class="card-text text-muted" id="display-email">correo@ejemplo.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+            <div class="card-body p-4">
+                <h2 class="card-title mb-4">Detalles de Mi Perfil</h2>
+                
+                <form id="form-perfil" novalidate>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre completo" required>
+                    <label for="nombre">Nombre completo</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="usuario" placeholder="Nombre de usuario" required>
+                    <label for="usuario">Nombre de usuario</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required readonly>
+                    <label for="email">Correo electrónico (no editable)</label>
+                  </div>
+
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="fechaNacimiento" required>
+                    <label for="fechaNacimiento">Fecha de nacimiento</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-lg mt-3">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white text-center py-4 mt-auto border-top">
+    <p class="mb-0 text-muted">&copy; 2025 Clínica Virtual - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/sesion.js"></script>
+  <script src="js/perfil.js"></script>
+  <script src="js/validaciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
