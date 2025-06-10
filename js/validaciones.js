@@ -34,15 +34,15 @@ function validarEmail(idCampo) {
   return ejecutarValidacion(idCampo, logica);
 }
 
-// ✅ Valida que el usuario tenga al menos 13 años (lógica simplificada y más robusta)
+// ✅ Valida que el usuario tenga al menos 18 años (lógica simplificada y más robusta)
 function validarFechaNacimiento(idCampo) {
   const logica = (valor) => {
     // Si no se ingresa fecha, no es válido.
     if (!valor) return false;
 
     const fechaLimite = new Date();
-    // Restamos 13 años a la fecha de hoy para obtener la fecha límite de nacimiento.
-    fechaLimite.setFullYear(fechaLimite.getFullYear() - 13);
+    // Restamos 18 años a la fecha de hoy para obtener la fecha límite de nacimiento.
+    fechaLimite.setFullYear(fechaLimite.getFullYear() - 18);
     
     // El usuario es válido si su fecha de nacimiento es anterior o igual a la fecha límite.
     return new Date(valor) <= fechaLimite;
